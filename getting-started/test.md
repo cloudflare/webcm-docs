@@ -11,4 +11,4 @@ If WebCM is up and running and your website is proxied correctly, accessing `htt
    1. You didn't set your website as the target in `webcm.config.ts`
 1. Try to run `webcm.track({ name: 'cheese', something: 'brie' })` from the browser's console and check the network tab for a `/track` request
 1. If you're loading the demo component, you should see `/system` network requests on `mousemove`, `mousedown`, `mouseup`, `scroll` and logs on the server for each `/system` request
-1. If you're loading the demo component, try calling `webcm.ecommerce('Purchase', { revenue: '123.99' })` from the browser's console
+1. If you're loading the demo component with ecommerce enabled, run `webcm.ecommerce('Purchase', { revenue: '123.99' })` from the browser's console and you should see a log starting with 'Ka-ching! 💰' on the server
