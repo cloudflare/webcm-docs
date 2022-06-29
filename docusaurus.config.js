@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'WebCM',
   tagline: 'A proxy server implementation of a Components Manager',
-  url: 'https://managedcomponents.dev/getting-started/components-manager',
+  url: 'https://managedcomponents.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
