@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://managedcomponents.dev/getting-started/components-manager"
+            to="/getting-started/intro"
           >
             🧩 Learn more
           </Link>
