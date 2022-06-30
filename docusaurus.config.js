@@ -51,9 +51,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Components Manager',
+        title: 'WebCM',
         logo: {
-          alt: 'Components Manager Logo',
+          alt: 'WebCM Logo',
           src: 'img/logo.svg',
         },
         items: [
