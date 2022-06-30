@@ -18,7 +18,7 @@ To proxy your website through WebCM, add your website to the target property of 
 
    You can optionally add flags `--c` and `--mc` to respectively customise the paths to your config file and/or customise the relative path where your components will be loaded. The default values are: `--c=webcm.config.ts --mc=./components`.
 
-   Note: WebCM will load any of the [Managed Components](https://managedcomponents.dev/components) specified in your config and present in the components folder, attempting to downloading any missing ones from the npm registry.
+   WebCM will load any of the [Managed Components](https://managedcomponents.dev/components) specified in your config and present in the components folder, attempting to downloading any missing ones from the [`@managed-components` npm registry](https://www.npmjs.com/org/managed-components).
 
 ### Develop
 

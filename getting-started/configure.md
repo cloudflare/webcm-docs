@@ -4,26 +4,34 @@ sidebar_position: 3
 
 # Configure a third-party Managed Component
 
-### E.g. Adding GA to your `webcm.config.ts`
+## Where are the third-party Managed Components?
 
-Head to [GA's Managed Component](https://github.com/managed-components/google-analytics) GitHub repository:
+You can find the list of published managed component npm packages [here.](https://www.npmjs.com/org/managed-components)
 
-1. Use the `namespace` value from [manifest.json](https://github.com/managed-components/google-analytics/blob/main/manifest.json) to refer to the component in your WebCM config file.
-2. Following the permissions in [manifest.json](https://github.com/managed-components/google-analytics/blob/main/manifest.json), grant all the permissions you want to grant to the component by adding them to the permissions array.
+## Example Setup for `webcm.config.ts`
 
-    (Managed Component authors are encouraged to document available settings keys in the [Tool Settings section of their project README](https://github.com/managed-components/google-analytics/blob/main/README.md#tracking-id-string-required) file.)
+### Google Analytics (GA)
 
-   For example
-   ```json
-     components: [
-       {
-         "name": "google-analytics",
-         "settings": { "tid": "UA-000000-2" },
-         "permissions": [
-           "client_network_requests",
-           "execute_unsafe_scripts",
-         ],
-       },
-     ],
+Head to [GA's Managed Component](https://github.com/managed-components/google-analytics) GitHub repository (Managed Component maintainers are encouraged to document available settings keys in the README file.)
+
+1. Following the [Tool Settings guidance of the project README](https://github.com/managed-components/google-analytics/blob/main/README.md#tracking-id-string-required), enter any required settings and/or grant any necessary permissions for the features you want to enable.
+
+    In this case, we just need the name of the `@managed-components` package, and a value for the Google Analytics tracking id:
+
+   ```typescript
+     export default {
+        components: [
+          {
+            name: "google-analytics",
+            settings: { tid: "UA-000000-2" },
+            permissions: [],
+          },
+          // ...other Managed Components
+        ],
+        // ...rest of the config
+        // (see full example at https://github.com/cloudflare/webcm/blob/unstable/example.config.ts)
+      }
    ```
-3. Restart your WebCM server ✅
+2. Restart your WebCM server ✅
+
+   WebCM will load the google-analytics package from the npm registry, applying your specified settings and permissions at runtime.
