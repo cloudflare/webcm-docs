@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Test your setup
 
-If WebCM is up and running and your website is proxied correctly, accessing `http://localhost:1337` will load a version of your website that will include a minimal WebCM script depending on the tools you've configured in `webcm.config.ts`. In order to test if WebCM was injected coorectly into your page, you can:
+If WebCM is up and running and your website is proxied correctly, accessing `http://localhost:1337` will load a version of your website that will include a minimal WebCM script depending on the tools you've configured in `webcm.config.ts`. In order to test if WebCM was injected correctly into your page, you can:
 
 1. Search for `webcm` in the Page Source - if you can't find it, there's a chance:
    1. You're accessing your website directly and not via the proxy URL
