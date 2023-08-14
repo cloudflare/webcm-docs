@@ -71,6 +71,11 @@ const config = {
           // },
           // { to: "/blog", label: "Blog", position: "left" },
           {
+            href: 'https://managedcomponents.dev',
+            label: 'Managed Components',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/cloudflare/webcm',
             label: 'GitHub',
             position: 'right',
@@ -104,6 +109,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/cloudflare/webcm',
+              },
+              {
+                label: 'Managed Components',
+                href: 'https://managedcomponents.dev/',
               },
             ],
           },
